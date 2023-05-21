@@ -14,7 +14,14 @@ Les 6 derniers points seront obtenus en implémentant au choix soit l'applicatio
 un sujet libre.
 
 Chaque application est un système multi-agents. C'est-à-dire l'environnement (la fenêtre) contiendra des agents qui ont
-chacun leur propre intelligence et se déplacent en fonction de leur environnement proche.
+chacun leur propre intelligence et se déplacent en fonction de leur environnement proche (voisinage). Deux types de
+voisinages sont en général utilisés:
+- Von Neumann (Nord, Sud, Est, Ouest)
+- Moore (Nord, Sud, Est, Ouest, Nord-Est, Nord-Ouest, Sud-Est, Sud-Ouest)
+
+![Neighborhoud](images/neighbourhood.jpeg)
+
+ℹ️ Nous n'allons considérer que le voisinage de Moore pour implémenter ces applications.
 
 ## Applications à implémenter
 
@@ -26,14 +33,9 @@ Chaque particule est un cercle défini par:
 - son rayon: fixe
 - sa couleur: aléatoire
 - sa position: aléatoire
-- sa direction: aléatoire selon le voisinage de:
-  - Von Neumann (Nord, Sud, Est, Ouest)
-    
-  ou
-  
-  - Moore (Nord, Sud, Est, Ouest, Nord-Est, Nord-Ouest, Sud-Est, Sud-Ouest)
+- sa direction: aléatoire selon le voisinage de Moore
 
-![Moore](images/neighbourhood.jpeg)
+![Neighborhoud](images/neighbourhood.jpeg)
 
 À chaque cycle:
 - une particule se déplace dans la prochaine case suivant sa direction
