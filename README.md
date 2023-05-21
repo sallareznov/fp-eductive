@@ -40,7 +40,9 @@ Chaque particule est un cercle défini par:
 - si elle arrive aux bords de l'environnement, elle réapparaît de l'autre côté
 - si elle cogne une autre particule, elle change de direction et prend une autre direction aléatoire
 
-Exemple de rendu: `java -jar particles.jar`
+Vidéo d'exécution
+
+https://github.com/sallareznov/fp-eductive/assets/10208974/3a893e31-3d25-4ec7-9fbd-045d52560bd6
 
 Paramètres utilisés:
 ```scala
