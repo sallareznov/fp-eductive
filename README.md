@@ -16,12 +16,12 @@ un sujet libre.
 Chaque application est un système multi-agents. C'est-à-dire l'environnement (la fenêtre) contiendra des agents qui ont
 chacun leur propre intelligence et se déplacent en fonction de leur environnement proche (voisinage). Deux types de
 voisinages sont en général utilisés:
-- Von Neumann (Nord, Sud, Est, Ouest)
-- Moore (Nord, Sud, Est, Ouest, Nord-Est, Nord-Ouest, Sud-Est, Sud-Ouest)
+- Von Neumann (`Nord`, `Sud`, `Est`, `Ouest`)
+- Moore (`Nord`, `Sud`, `Est`, `Ouest`, `Nord-Est`, `Nord-Ouest`, `Sud-Est`, `Sud-Ouest`)
 
 ![Neighborhoud](images/neighbourhood.jpeg)
 
-ℹ️ Nous n'allons considérer que le voisinage de Moore pour implémenter ces applications.
+:information_source: Nous n'allons considérer que le voisinage de Moore pour implémenter ces applications.
 
 ## Applications à implémenter
 
@@ -30,25 +30,21 @@ voisinages sont en général utilisés:
 Cette application simule des particules qui se déplacent indéfiniment dans l'environnement.
 
 Chaque particule est un cercle défini par:
-- son rayon: fixe
+- son rayon: fixe (le même pour toutes les autres particules)
 - sa couleur: aléatoire
 - sa position: aléatoire
 - sa direction: aléatoire selon le voisinage de Moore
-
-![Neighborhoud](images/neighbourhood.jpeg)
 
 À chaque cycle:
 - une particule se déplace dans la prochaine case suivant sa direction
 - si elle arrive aux bords de l'environnement, elle réapparaît de l'autre côté
 - si elle cogne une autre particule, elle change de direction et prend une autre direction aléatoire
 
-Vidéo d'exécution
-
 https://github.com/sallareznov/fp-eductive/assets/10208974/3a893e31-3d25-4ec7-9fbd-045d52560bd6
 
 Paramètres utilisés:
 ```scala
-    val numberOfParticles: Int                = 1000
+    val numberOfParticles: Int                = 1500
     val particleRadius: Int                   = 3
     val screenBounds: Rectangle2D             = Screen.primary.visualBounds
     val (boardWidth, boardHeight): (Int, Int) = (screenBounds.width.intValue, screenBounds.height.intValue)
@@ -59,7 +55,6 @@ Paramètres utilisés:
 Wator est une simulation de dynamique des populations avec deux types d'espèces: des requins et des thons. Ces
 espèces cohabitent dans le même environnement (dans notre cas, l'environnement représenterait l'océan). Les thons se
 reproduisent sans contrainte, pendant que les requins essaient de manger les thons.
-
 
 - `nTunas`: le nombre de thons présents au départ dans l'environnement
 - `nSharks`: le nombre de requins présents au départ dans l'environnement
@@ -102,7 +97,6 @@ Ici, c'est vous qui décidez. Vous pouvez coder votre propre application ScalaFX
 que cette application permette de simuler des agents qui se déplacent en fonction d'évènement (le temps ou à
 la touche d'un clavier par exemple) et qui réagissent selon leur environnement.
 
-
 ## Principes de la FP en Scala
 
 Il est recommandé d'utiliser (si nécessaire):
@@ -132,4 +126,4 @@ Types de `scala.collection.mutable`
 
 ## Rendu
 
-Un lien vers le repository Github de votre projet, avec un README expliquant comment lancer les différentes applications
+Un lien vers le repository Github de votre projet, avec un README expliquant comment lancer les différentes applications.
