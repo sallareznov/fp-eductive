@@ -19,7 +19,7 @@ voisinages sont en général utilisés:
 - Von Neumann (`Nord`, `Sud`, `Est`, `Ouest`)
 - Moore (`Nord`, `Sud`, `Est`, `Ouest`, `Nord-Est`, `Nord-Ouest`, `Sud-Est`, `Sud-Ouest`)
 
-![Neighborhoud](images/neighbourhood.jpeg)
+![Neighbourhood](images/neighbourhood.jpeg)
 
 :information_source: Nous n'allons considérer que le voisinage de Moore pour implémenter ces applications.
 
@@ -93,7 +93,13 @@ de se déplacer.
 
 ### Prédateur proie
 
-TODO
+Vous créerez une application avec:
+- une proie (que vous contrôlerez avec les mouvements du clavier `haut, bas, gauche, droite`)
+- un ou des prédateurs qui auront pour but de vous rattraper en utilisant un algorithme du plus court chemin
+
+Les deux seuls paramètres de l'application seront:
+- le nombre de prédateurs (minimum 1)
+- la vitesse du jeu
 
 ### Projet libre
 
@@ -122,10 +128,10 @@ Il est INTERDIT d'utiliser:
 Il est préférable d'utiliser:
 - des types du paquetage `scala.collection.immutable` au lieu de ceux du paquetage `scala.collection.mutable`
 
-![](images/immutable-types.svg)
+![immutable types](images/immutable-types.svg)
 Types de `scala.collection.immutable`
 
-![](images/mutable-types.svg)
+![mutable types](images/mutable-types.svg)
 Types de `scala.collection.mutable`
 
 ## Rendu
