@@ -91,6 +91,24 @@ de se déplacer.
 
 [Exemple de simulation](https://www.youtube.com/watch?v=YnYjjbrWNk0&t=30s)
 
+
+Exemples de paramètres:
+```scala
+private final val agentSize: Int      = 9
+private final val numberOfTunas: Int  = 500
+private final val numberOfSharks: Int = 50
+private final val tunaBreed: Int      = 2
+private final val sharkBreed: Int     = 9
+private final val sharkEnergy: Int    = 3
+
+override def start(): Unit = {
+   val (screenWidth, screenHeight) = (Screen.primary.visualBounds.width.toInt, Screen.primary.visualBounds.height.toInt)
+   val (boardWidth, boardHeight)   = (screenWidth / agentSize, screenHeight / agentSize)
+
+   ...
+}
+```
+
 ### Prédateur proie
 
 Vous créerez une application avec:
