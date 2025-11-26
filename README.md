@@ -154,4 +154,8 @@ Types de `scala.collection.mutable`
 
 ## Rendu
 
-Un lien vers le repository Github de votre projet, avec un README expliquant comment lancer les différentes applications.
+Un lien vers le(s) repository(ies) Github/Gitlab de votre projet, avec un README contenant, pour chaque application:
+- une vidéo d'exécution d'une dizaine de secondes
+- les paramètres utilisés (nombre de particules, thons, requins, nombre de cycles avant reproduction pour les thons/requins etc...)
+
+
